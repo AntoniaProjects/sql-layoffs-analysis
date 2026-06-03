@@ -1,55 +1,73 @@
-# SQL Layoffs Data Analysis
+# 📊 SQL Layoffs Data Analysis (Data Cleaning & EDA)
 
-## Project Overview
+## 📌 Project Overview
 
-This project explores global layoff trends using SQL.
+This project analyzes global company layoffs using SQL during the COVID-19 and post-COVID economic period.
 
-The goal was to clean the raw dataset and perform exploratory data analysis to identify patterns across industries, countries, companies, and time periods.
+The goal was to clean a raw dataset and perform exploratory data analysis (EDA) to identify patterns across industries, countries, companies, and time.
 
-## Tools Used
+The project demonstrates a full SQL workflow from data cleaning to business insight generation.
 
-* MySQL
-* SQL Window Functions
-* Common Table Expressions (CTEs)
-* Aggregate Functions
+---
 
-## Data Cleaning
+## 🛠 Tools Used
+
+- MySQL  
+- SQL (Window Functions, CTEs, Aggregations)  
+- MySQL Workbench  
+
+---
+
+## 🧹 Data Cleaning
+
+The raw dataset contained inconsistencies, duplicates, and missing values.
 
 The cleaning process included:
 
-* Removing duplicates
-* Standardizing company names
-* Handling missing values
-* Converting date formats
-* Preparing data for analysis
+- Removing duplicate records using `ROW_NUMBER()` window function  
+- Standardizing company and industry names  
+- Handling missing and blank values  
+- Converting date fields to proper DATE format  
+- Creating a structured analysis-ready dataset using staging tables  
 
-## Exploratory Data Analysis
+---
 
-The analysis answers questions such as:
+## 📊 Exploratory Data Analysis (EDA)
 
-* Which companies experienced the largest layoffs?
-* Which industries were most affected?
-* Which countries recorded the highest layoffs?
-* How did layoffs evolve over time?
-* What were the top companies by layoffs each year?
+The analysis focused on understanding layoff patterns across multiple dimensions:
 
-## SQL Concepts Demonstrated
+- Companies with the highest total layoffs  
+- Companies with 100% workforce reductions  
+- Industries most affected by layoffs  
+- Countries with highest layoff volumes  
+- Layoff trends over time (yearly and monthly)  
+- Rolling cumulative layoffs  
+- Top companies per year using ranking functions  
 
-* GROUP BY
-* ORDER BY
-* PARTITION BY
-* Aggregate Functions
-* Window Functions
-* CTEs
-* Date Functions
-* Ranking Functions
+---
 
-## Key Findings
+## 🧠 Key Insights
 
-* Technology companies accounted for a large share of layoffs.
-* Layoffs peaked during specific economic periods.
-* Certain countries experienced significantly higher workforce reductions.
+- The technology sector accounted for a significant share of global layoffs  
+- Layoffs peaked during major economic downturn periods (including COVID-related impact)  
+- A small number of companies contributed disproportionately to total layoffs  
+- Clear time-based patterns show waves of layoffs rather than a constant trend  
+- Certain countries experienced significantly higher workforce reductions  
 
-## Author
+---
+
+## 🧠 SQL Concepts Used
+
+- `ROW_NUMBER()` for duplicate removal  
+- `DENSE_RANK()` for ranking analysis  
+- `PARTITION BY` for grouped window calculations  
+- CTEs (Common Table Expressions)  
+- Aggregation functions (`SUM`, `MAX`, `COUNT`)  
+- Date functions and time-based grouping  
+- Data cleaning transformations  
+
+---
+
+## 👤 Author
 
 Created by Antonia Utz
